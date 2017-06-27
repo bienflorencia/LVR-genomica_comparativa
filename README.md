@@ -1,14 +1,13 @@
 # comparative-genomics
 
-RASTtk ANNOTATION
+##RASTtk anotación de genomas
 rast_tk.py
 
 Se corre en el directorio donde se encuentran, en formato fasta, los genomas que se quieren anotar (cepas/). El programa toma como input todos los genomas del directorio que terminen en “.fasta” y devuelve como output los archivos de anotación correspondientes en formato genbank_merged (“.gbk”). 
 Este formato es requerido por eCAMBer, permite tener las anotaciones en posiciones genómicas sucesivas y no en start y ends partidos por cada contig. El nombre del archivo gbk que se genera se corresponderá al del fasta de inicio.
 
 
-
-eCAMBer comparative analysis of multiple bacterial strains within the same species
+##eCAMBer comparative analysis of multiple bacterial strains within the same species
 gbk_2_ecamber.py, run_ecamber.py
 
 Para preparar el dataset que será input del análisis con eCAMBer se deberá correr gbk_2_ecamber.py primero.
@@ -52,7 +51,7 @@ Se corre como ./clusters_genome_specific.py "clusters/*" group.txt
 
 clusters_between_groups_90-10.py
 
-FALTA CORREGIR !
+
 
 
 

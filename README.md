@@ -5,7 +5,7 @@
 
 Se corre en el directorio donde se encuentran los genomas que se quieren anotar. El programa toma como input todos los genomas del directorio que terminen en *.fasta* y devuelve como output los archivos de anotación correspondientes en formato *genbank_merged* (*.gbk*). 
 Este formato es útil para genomas no cerrados (en contigs) ya que permite tener las anotaciones en posiciones genómicas sucesivas y no en start y ends partidos por cada contig. El nombre del archivo gbk que se genera se corresponderá al del fasta de inicio.
-Se corre ./rast_tk.py
+⋅⋅* Se corre ./rast_tk.py
 
 
 ## eCAMBer análisis comparativo de multiples cepas de la misma especie
@@ -13,7 +13,7 @@ Se corre ./rast_tk.py
 
 Para preparar el dataset que será input del análisis con eCAMBer se deberá correr *gbk_2_ecamber.py* primero.
 Dentro del directorio **ecamber/**, donde se encuentra el programa ecamber.py, se debe crear un directorio nuevo dentro de la carpeta **datasets/**.
-Se corre ./gbk_2_ecamber.py
+⋅⋅* Se corre ./gbk_2_ecamber.py
 
 En el directorio creado (**ecamber/dataset/ejemplo/**) deben estar los genomas en formato *gbk_merged* anotados con **RASTtk**. El programa toma como input los gbk y devuelve como output: 
 1. Un directorio conteniendo los archivos de anotación en formato texto (ecamber/datasets/ejemplo/anss_parsed/). 

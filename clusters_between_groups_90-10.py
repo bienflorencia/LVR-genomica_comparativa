@@ -12,8 +12,8 @@ lista1_genomas = []
 lista2_genomas = []
 dic_clusters = {}
 
-porcentaje_si = 0.90
-porcentaje_no = 0.10
+porcentaje_si = 0.80
+porcentaje_no = 0.25
 
 f = fileinput.input("group1.txt")
 for line in f:
@@ -45,7 +45,6 @@ for file in glob.glob(file1):
 lista_g1 = []
 lista_g2 = []
 
-# ESTO OTRO SERIA PARA CLUSTERS DEL COREGENOMA
 
 coregenome = {}
 lista2 = {}
@@ -64,6 +63,7 @@ for k, v in dic_clusters.iteritems():
 	lista2[value] += 1
       else:
 	lista2[value] = 1
+
 	
 dic_gene_names = {}
 h = fileinput.input("cluster_gene_names.txt")
@@ -77,6 +77,4 @@ for item, val in coregenome.iteritems():
       if item == items and (vals <= (total_lista2*porcentaje_no)):
 	if item in dic_gene_names.keys():
 	  print item, dic_gene_names[item], val, vals
-
-    
 

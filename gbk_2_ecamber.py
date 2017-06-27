@@ -54,9 +54,3 @@ for file in filename:
       os.system('mv ' + file + ' anns_parsed/patric/')
   if file.endswith('.fasta'):
     os.system('mv ' + file + ' genomes/')
-
-#salir del directorio de datasets y correr las siguientes lineas donde esta ecamber.py
-#python ecamber.py -a f -d typhimurium -w 4
-#python ecamber.py -a ph1 -d typhimurium -w 4 -as patric
-#python ecamber.py -a ph2 -w 4 -d typhimurium -as patric
-#python ecamber.py -a out -d typhimurium -w 4 -as patric -step 3

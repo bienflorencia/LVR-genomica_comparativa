@@ -5,7 +5,7 @@
 
 Se corre en el directorio donde se encuentran los genomas que se quieren anotar. El programa toma como input todos los genomas del directorio que terminen en *.fasta* y devuelve como output los archivos de anotación correspondientes en formato *genbank_merged* (*.gbk*). 
 Este formato es útil para genomas no cerrados (en contigs) ya que permite tener las anotaciones en posiciones genómicas sucesivas y no en start y ends partidos por cada contig. El nombre del archivo gbk que se genera se corresponderá al del fasta de inicio.
-⋅⋅* Se corre ./rast_tk.py
+###### Se corre ./rast_tk.py
 
 
 ## eCAMBer análisis comparativo de multiples cepas de la misma especie

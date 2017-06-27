@@ -1,4 +1,4 @@
-# comparative-genomics
+# Análisis de genómica comparativa
 
 ## RASTtk anotación de genomas
 **rast_tk.py**

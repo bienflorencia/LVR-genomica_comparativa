@@ -12,8 +12,8 @@ lista1_genomas = []
 lista2_genomas = []
 dic_clusters = {}
 
-porcentaje_si = 0.80
-porcentaje_no = 0.25
+porcentaje_si = 0.90
+porcentaje_no = 0.10
 
 f = fileinput.input("group1.txt")
 for line in f:

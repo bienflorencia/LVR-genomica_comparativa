@@ -53,13 +53,13 @@ A partir de los archivos fasta para cada genoma se obtienen los archivos fasta p
     ./clusters_fasta_dna.py clusters_table.txt "output/genes_dna/*.fasta"
 
 ## Análisis de genes específicos de un grupo de genomas
-1. Estricto **clusters_genome_specific.py** "\n"
+1. Estricto **clusters_genome_specific.py**
 2. Entre grupos **clusters_between_groups_90-10.py**
 
 
 **clusters_genome_specific.py**
 
-A partir de los archivos de las secuencias fasta para cada cluster podemos analizar cuáles son los clusters que contienen copias únicamente de un grupo de genomas específico. Para esto precisamos como inputs la lista de archivos fasta de cada cluster ("output/clusters/*"*) y el archivo de genomas específicos que quiero evaluar (group.txt). A partir de esa lista de genomas busca entre los clusters y me devuelve en un archivo de texto (clusters_genome_specific.txt) aquellos en los que solo se encuentran los genomas listados en group.txt.
+A partir de los archivos de las secuencias fasta para cada cluster podemos analizar cuáles son los clusters que contienen copias únicamente de un grupo de genomas específico. Para esto precisamos como inputs la lista de archivos fasta de cada cluster ("output/clusters/*"*) y el archivo de genomas específicos que quiero evaluar (*group.txt*). A partir de esa lista de genomas busca entre los clusters y me devuelve en un archivo de texto *clusters_genome_specific.txt* aquellos en los que solo se encuentran los genomas listados en *group.txt*.
 
     ./clusters_genome_specific.py "clusters/*"* group.txt
 
